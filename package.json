@@ -2,8 +2,10 @@
   "name": "blog",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "watch":"node-sass --watch src/resource/scss --output src/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/dangxuan0111/blog_nodejs/issues"
   },
-  "homepage": "https://github.com/dangxuan0111/blog_nodejs#readme"
+  "homepage": "https://github.com/dangxuan0111/blog_nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "1.10.0"
+  },
+  "devDependencies": {
+    "express-handlebars": "^5.3.3",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
 }
